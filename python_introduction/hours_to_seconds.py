@@ -3,7 +3,7 @@ hours = 2
 seconds = 3600
 
 #converting
-seconds_result = hours * seconds
+seconds = hours * 3600
 
 #result
-print(f"2 hour(s) is {seconds_result}")
+print(f"2 hour(s) is {seconds}")
