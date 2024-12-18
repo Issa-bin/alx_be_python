@@ -1,7 +1,7 @@
 #weather input prompt
-weather= input("what's the weather like today? (sunny/rainy/cold):")
+weather = input("what's the weather like today? (sunny/rainy/cold):")
 
-#clothing recommendations
+#clothing recommendations with control-flow
 if weather == "sunny":
     print(f"wear a t-shirt and sunglasses.")
 elif weather == "rainy":
