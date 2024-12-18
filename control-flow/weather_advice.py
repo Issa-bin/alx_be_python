@@ -10,3 +10,7 @@ elif weather == "cold":
     print(f"Make sure to wear a warm coat and a scarf.")
 else:
     print(f"Sorry, I don't have recommendations for this weather.")
+
+#the function call
+if __name__=="__main__":
+    "get_weather_recommendation()"
