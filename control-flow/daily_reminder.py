@@ -2,8 +2,8 @@
 print ("welcome to your daily reminder")
 
 task = input("Enter your task:")
-time_bound = input("Is it time-bound? (yes/no:)")
-priority = input("priority: (high/medium/low)")
+time_bound = input("Is it time-bound? (yes/no):")
+priority = input("Priority: (high/medium/low)")
 
 #match case
 match (priority, time_bound):
@@ -12,7 +12,7 @@ match (priority, time_bound):
     case ("medium", "yes"):
         print ( "Reminder: {task} is a medium-priority task. Address it soon.")
     case ("low", "yes"):
-        print ("note: {task} is a low-priority task. consider completing it when you have free time.")
+        print ("Note: {task} is a low-priority task. consider completing it when you have free time.")
     case _:
         print ("task: {task} doesn't match predefined conditions. please review your input.")
 

@@ -1,5 +1,5 @@
 #pattern size
-pattern_size = input("Enter the size of the pattern:")
+pattern_size = int\s*\(\s*input\s*\(\s*['\"]"Enter the size of the pattern:\s*['\"]\s*\")\s*\)
 
 
 #conditions
