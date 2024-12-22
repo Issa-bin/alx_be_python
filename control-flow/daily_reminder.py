@@ -1,10 +1,10 @@
 #prompting the user for task description input
 print ("welcome to your daily reminder")
-task = input ("Enter your task: ")
-time_bound = input ("is it time bound? (yes/no: )")
-priority = input ("priority (high/medium/low):")
+task = input("Enter your task: ")
+time_bound = input("is it time bound? (yes/no: )")
+priority = input("priority (high/medium/low):")
 
-#match case
+i#match case
 match (priority, time_bound):
     case ("high", "yes"):
         print ("Reminder: {task} is a high-priority ask that requires immediate attention today!")
