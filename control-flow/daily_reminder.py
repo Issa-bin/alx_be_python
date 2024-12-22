@@ -3,7 +3,7 @@ print ("welcome to your daily reminder")
 
 task = input("Enter your task:")
 time_bound = input("Is it time-bound? (yes/no):").lower()
-priority = input("Priority: (high/medium/low)").lower()
+priority = input("Priority(high/medium/low):").lower()
 
 #match case
 match (priority, time_bound):
