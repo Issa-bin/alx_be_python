@@ -6,19 +6,31 @@ time_bound = input("Is it time-bound? (yes/no):").lower()
 priority = input("Priority(high/medium/low):").lower()
 
 #match case
-match (priority, time_bound):
-    case ("high", "yes"):
-        print ("Reminder: {task} is a high-priority ask that requires immediate attention today!")
-    case ("medium", "yes"):
-        print ( "Reminder: {task} is a medium-priority task. Address it soon.")
-    case ("low", "yes"):
-        print ("Note: {task} is a low-priority task. consider completing it when you have free time.")
-    case _:
-        print ("task: {task} doesn't match predefined conditions. please review your input.")
+match priority:
+    case "high":
+        if time_bound == "yes":
+            print ("Reminder: {task} is a {priority} task that requires immediate attention today!")
+        else:
+            print ("Note: {task} is a {priority} task. Consider completing it when you have free time.")
+
+    case "medium":
+        if time_bound == "yes":
+            print ( "Reminder: {task} is a {priority} task that requires immediate attention today!.")
+        else:
+            print ("Note: {task} is a {priority} task. Consider completing it when you have free time.")
+
+    case "low":
+        if time_bound =="yes":
+            print ("Note: {task} is a {priority} task. Consider completing it today.")
+        else:
+            print ("Note: {task} is a {priority} task. Consider completing it when you have free time.")
 
 #IF customization
-if time_bound == "yes" and priority == "high":
-    print ("action required: {task} must be completed immediately due to its high priority")
+checker = input("Do you want to add a new task (yes or no):") 
+if checker == "yes":
+    continue
+else:
+    break
 
 #call the function
 daily_reminder: any 
