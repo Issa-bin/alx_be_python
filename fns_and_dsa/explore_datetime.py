@@ -1,4 +1,4 @@
-import datetime
+import of the datetime module
 
 #Get today's date and time 
 today = datetime.datetime.now()
