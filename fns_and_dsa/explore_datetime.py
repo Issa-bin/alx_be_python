@@ -42,6 +42,3 @@ formatted_time = today.strftime("%H:%M:%S") #HH:MM:SS format
 #Print formatted date and time
 print(f"\nFormatted date: {formatted_date}")
 print(f"Formatted time: {formatted_time}")
-
-if __name__=="__main__":
-    main()
