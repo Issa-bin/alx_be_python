@@ -7,8 +7,8 @@ def main():
     operation = input("Choose the operation (+, -, *, /):")
 
 #Perform operations
-    result = perform_operation (num1, num2, operation)
+    result = perform_operation(num1, num2, operation)
     print(f"Result: {result}")
-    
+
 if __name__== "__main__":
     main()
