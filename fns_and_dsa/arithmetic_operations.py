@@ -4,7 +4,7 @@ def main():
     print("Arithmetic Operations")
     num1 = float(input("Enter the first number: "))
     num2 = float(input("Enter the second number: "))
-    operation = input ("Enter operation (+,-, *, \): ").strip().lower()
+    operation = input ("Enter operation (add, subtract, multiply, divide): ").strip().lower()
 
 #Perform operations
     result = perform_operation(num1, num2, operation)
