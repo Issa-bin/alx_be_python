@@ -8,14 +8,14 @@ def main():
     operation = input ("Enter the operation (add, subtract, multiply, divide): ").strip().lower()
 
     #Perform operations
-    result = perform_operation(num1, num2, operation)
+    result = perform_operation(num1,num2,operation)
 
     if result == "Division by zero":
       print("Error: Division by zero")
     else:
       print(f"Result: {result}")
 
-def perform_operation (num1, num2, operation):
+def perform_operation(num1, num2, operation):
     """
     Performs the specified arithmetic operation on two numbers.
 
