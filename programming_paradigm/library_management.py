@@ -3,10 +3,12 @@ class Book:
         self.title = title
         self.author = author
         self.is_available = True
-
-    def __sr__(self):
+        
+    def __str__(self):
         return f"{self.title}by {self.author}"
     
+    def return_book(self):
+        self.is_available = True
 class Library:
     def __init__(self):
         self.books =[]
