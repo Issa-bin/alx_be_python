@@ -28,7 +28,7 @@ class Library:
 
     def return_book(self,title):
         for book in self.books:
-            if book.title == title:
+            if book.title == title and not book.is_available:
                 book.is_available = True
                 return
             print("Sorry, there is no book '{title}' checked out.")
